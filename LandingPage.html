@@ -1,0 +1,169 @@
+<!Doctype html>
+
+<head>
+
+<title>Bus Management System</title>
+
+<style>
+
+body{
+	margin:0;
+
+}
+
+.container{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url("image1.png");
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:center;
+	height:100vh;
+	margin:0;
+}
+
+.navigation{
+	display:flex;
+	justify-content:flex-end;
+	background-color:black;
+	color:white;
+	padding:3px;
+	font-style:italic;
+	border-bottom:4px solid orange;
+	position:sticky;
+	top:0px;
+}
+
+.navigation a{
+	display:flex;
+	flex-direction:column;
+	text-decoration:none;
+	padding:12px 12px;
+	color:white;
+	justify-content:center;
+	algin-items:center;
+
+}
+
+.header{
+	left:10px;
+	display: inline-block;
+	
+}
+
+.navigation a:hover{
+
+	background-color:#111;
+	cursor:pointer;
+	color:#777;
+}
+
+.container1{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-style: italic;
+	border-radius: 15px;
+	background-color:black;
+	padding:10px;
+	height: 150px;
+	width: 900px;
+	color:white;
+}
+
+.container1 h1 {
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
+
+.btn{
+	background-color: orange;
+	color:black;
+	font-size: 20px;
+	border:none;
+	border-radius: 10px;
+	padding:12px 20px;
+	cursor: pointer;
+}
+
+.log{
+	display: flex;
+	padding: 10px;
+	background-color:black;
+	color:orange;
+	height:450px;
+	width:300px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	border-radius: 15px;
+
+}
+
+</style>
+
+<script type="text/javascript">
+	
+
+
+</script>
+</head>
+
+<body>
+<div class="navigation">
+
+<h2 style="margin-right: auto;">Bus Management</h2>
+
+
+<a href="#">Home</a>
+<a href="#">About Us</a>
+<a href="#">Contact US</a>
+<a href="#">Services</a>
+</div>
+
+<div class="container">
+
+<div class="container1">
+<h1>Get Your Journey Planned</h1> 
+</div> &nbsp &nbsp
+<div class="log">
+	<img src="avatar.png" style="width: 90px"><br><br>
+	<form action="">
+		<input type="text" name="username" placeholder="Username" style="border-radius: 5px;background-color: transparent;color:orange;border: none;"><br><br>
+		<input type="Password" name="userpass" placeholder="Password" style="border-radius: 5px;background-color: transparent;color:orange;border: none;"><br><br>
+		<select name="accounttype" style="border-radius: 5px;background-color: transparent;color:#777;border: none;" placeholder="Account Type">
+			<option value="admin">Admin</option>
+			<option value="student">Student</option>
+			<option value="faculty">Faculty</option>
+		</select><br><br>
+		<button class="btn" type="submit">Log In</button> &nbsp &nbsp <button class="btn" type="submit">Sign Up</button>
+		
+	</form>
+</div>
+</div>
+
+</body>
+
+</html>
